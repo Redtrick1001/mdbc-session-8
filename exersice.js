@@ -1,7 +1,4 @@
 "use-strict";
 
 
-console.log('hello world');
-console.log("bye");
-
-console.log("noooooooo!")
+console.info("running")

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<head>​
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+
+<body>
+
+<input type="text" placeholder="Enter text ..." name="name" />
+
+<p id="echo"></p>
+
+</body>
+<script type="text/javascript" defer>
+    const echoOutput = (event) => {
+        echoBlock.textContent = event.target.value;
+    }
+    const userInput = document.querySelector('input');
+    const echoBlock = document.getElementById('echo');
+    userInput.addEventListener('input', echoOutput);
+    </script>
+</html>
