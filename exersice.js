@@ -1,4 +1,4 @@
 "use-strict";
 
 
-console.info("running")
+console.info("running");

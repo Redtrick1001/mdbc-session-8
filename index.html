@@ -12,16 +12,23 @@
 <body>
 
 <input type="text" placeholder="Enter text ..." name="name" />
+<button id="echo-on-commnd">Click me to echo</button>
 
 <p id="echo"></p>
 
 </body>
 <script type="text/javascript" defer>
-    const echoOutput = (event) => {
-        echoBlock.textContent = event.target.value;
+    const echoOutput = (event) => {​
+        if (input.value === '') {​
+            alert('Please enter a value');
+        } else {
+            echoBlock.textContent = input.value;
+        }
     }
     const userInput = document.querySelector('input');
     const echoBlock = document.getElementById('echo');
-    userInput.addEventListener('input', echoOutput);
+    const btnEcho = document.getElementById("echo-on-commnd");
+    userInput.addEventListener('click', btnEcho);
     </script>
+    
 </html>
